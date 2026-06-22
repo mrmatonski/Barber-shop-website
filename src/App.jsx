@@ -231,6 +231,12 @@ function App() {
           </div>
         </div>
       </section>
+
+      <footer className="site-footer">
+        <span className="footer-rule" aria-hidden="true" />
+        <p>Created by Michael Maton</p>
+        <span className="footer-rule" aria-hidden="true" />
+      </footer>
     </main>
   )
 }

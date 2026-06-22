@@ -440,6 +440,34 @@ h3 {
   color: var(--ink);
 }
 
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  width: min(1180px, calc(100% - 32px));
+  margin: -28px auto 0;
+  padding: 0 0 42px;
+}
+
+.site-footer p {
+  margin: 0;
+  color: var(--gold-light);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-rule {
+  display: block;
+  width: min(110px, 20vw);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(243, 207, 121, 0.8), transparent);
+}
+
 @media (max-width: 900px) {
   .site-header {
     position: static;
@@ -485,6 +513,10 @@ h3 {
   .content-band,
   .visit-band {
     margin-bottom: 64px;
+  }
+
+  .site-footer {
+    margin-top: -18px;
   }
 }
 
@@ -576,5 +608,14 @@ h3 {
   .hours-row {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+
+  .site-footer {
+    gap: 10px;
+    padding-bottom: 32px;
+  }
+
+  .site-footer p {
+    font-size: 0.78rem;
   }
 }
