@@ -68,6 +68,14 @@ function App() {
 
   return (
     <main>
+      <div className="floating-tools" aria-hidden="true">
+        <span className="scissor scissor-one">✂️</span>
+        <span className="scissor scissor-two">✂️</span>
+        <span className="spark spark-one" />
+        <span className="spark spark-two" />
+        <span className="spark spark-three" />
+      </div>
+
       <header className="site-header" aria-label="Royal Fadez primary navigation">
         <a className="brand" href="#top" aria-label="Royal Fadez home">
           <span className="brand-mark">RF</span>
@@ -118,11 +126,19 @@ function App() {
           </dl>
         </div>
         <div className="hero-media" aria-label="Barber haircut photography">
+          <div className="barber-pole" aria-hidden="true">
+            <span />
+          </div>
           <img
             className="hero-main-img"
             src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1100&q=82"
             alt="Barber finishing a fresh haircut"
           />
+          <div className="cut-trail" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </div>
           <div className="booking-panel">
             <span>Next step</span>
             <strong>Choose service, pick a time, and roll in ready.</strong>
